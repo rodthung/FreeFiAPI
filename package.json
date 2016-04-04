@@ -1,0 +1,52 @@
+{
+  "name": "freefiapi",
+  "version": "1.0.0",
+  "description": "api for freefi app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jonoyanguren@github.com/rodthung/FreeFiAPI.git"
+  },
+  "keywords": [
+    "free",
+    "wifi"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodthung/FreeFiAPI/issues"
+  },
+  "homepage": "https://github.com/rodthung/FreeFiAPI#readme",
+  "dependencies": {
+    "body-parser": "~1.5.2",
+    "chai": "~1.8.1",
+    "cloudinary": "^1.2.6",
+    "cookie-parser": "^1.3.3",
+    "debug": "^2.1.1",
+    "express": "~4.7.2",
+    "express-session": "^1.10.1",
+    "firebase": "^2.3.2",
+    "jade": "^1.9.1",
+    "jsonwebtoken": "^5.4.1",
+    "method-override": "~2.1.2",
+    "mocha": "~1.14.0",
+    "mongodb": "^2.0.49",
+    "mongoose": "*",
+    "morgan": "~1.2.2",
+    "nodemailer": "^1.10.0",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^1.0.0",
+    "password-hash": "^1.2.2",
+    "request": "^2.67.0",
+    "satellizer": "^0.13.2",
+    "serve-favicon": "^2.2.0",
+    "should": "~2.1.0",
+    "socket.io": "^1.3.7",
+    "sweetalert": "^1.1.3"
+  }
+}
