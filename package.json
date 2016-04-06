@@ -34,7 +34,7 @@
     "jsonwebtoken": "^5.4.1",
     "method-override": "~2.1.2",
     "mocha": "~1.14.0",
-    "mongodb": "^2.0.49",
+    "mongodb": "^2.1.14",
     "mongoose": "*",
     "morgan": "~1.2.2",
     "nodemailer": "^1.10.0",
