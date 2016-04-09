@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var wifiSpotSchema = new mongoose.Schema({
     name: String,
     lat: Number,
-    long: Number,
+    lon: Number,
     wifiName: String,
     wifiPass: String,
     likes: Number,

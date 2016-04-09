@@ -9,13 +9,13 @@ router.route('/')
 
     var wifi = new wifiSpot();
 
-    wifi.name = req.body.name;
+    wifi.name = req.body.locationName;
     wifi.lat = req.body.lat;
-    wifi.long = req.body.long;
+    wifi.lon = req.body.lon;
     wifi.wifiName = req.body.wifiName;
-    wifi.wifiPass = req.body.wifiPass;
-    wifi.likes = req.body.likes;
-    wifi.unlikes = req.body.unlikes;
+    wifi.wifiPass = req.body.pass;
+    wifi.likes = 0;
+    wifi.unlikes = 0;
 
     wifi.save(function (err) {
         if (err)
