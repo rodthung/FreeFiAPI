@@ -10,8 +10,8 @@ router.route('/')
     var wifi = new wifiSpot();
 
     wifi.name = req.body.locationName;
-    wifi.lat = req.body.lat;
-    wifi.lon = req.body.lon;
+    wifi.coords.latitude = req.body.lat;
+    wifi.coords.longitude = req.body.lon;
     wifi.wifiName = req.body.wifiName;
     wifi.wifiPass = req.body.pass;
     wifi.likes = 0;
