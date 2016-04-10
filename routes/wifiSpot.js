@@ -35,6 +35,19 @@ router.route('/')
     });
 });
 
+router.route('/:wifiId')
+
+.delete(function(req, res) {
+    wifiSpot.remove({
+        _id: req.params.bear_id
+    }, function(err, bear) {
+        if (err)
+            res.send(err);
+
+        res.json({ message: 'Successfully deleted' });
+    });
+});
+
 router.route('/like/:wifiId')
 
 .post(function (req, res) {
@@ -56,6 +69,7 @@ router.route('/like/:wifiId')
         });
     });
 })
+
 
 
 
