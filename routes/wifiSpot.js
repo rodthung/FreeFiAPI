@@ -39,7 +39,7 @@ router.route('/:wifiId')
 
 .delete(function(req, res) {
     wifiSpot.remove({
-        _id: req.params.wifi_id
+        _id: req.params.wifiId
     }, function(err) {
         if (err)
             res.send(err);
