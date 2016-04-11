@@ -1,11 +1,10 @@
 var mongoose = require('mongoose');
 
 var wifiSpotSchema = new mongoose.Schema({
+	id: String,
     name: String,
-    coords: {
-    	latitude: Number,
-    	longitude: Number
-    },
+    latitude: Number,
+    longitude: Number,
     wifiName: String,
     wifiPass: String,
     likes: Number,
