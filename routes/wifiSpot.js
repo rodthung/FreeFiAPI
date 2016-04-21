@@ -70,6 +70,29 @@ router.route('/like/:wifiId')
     });
 })
 
+router.route('/unlike/:wifiId')
+
+.post(function (req, res) {
+
+    wifiSpot.findOne({
+        _id: new mongodb.ObjectID(req.params.wifiId)
+    }, function (err, wifiSpot) {
+
+        if (err)
+            res.send(err);
+
+        wifiSpot.unlikes++;
+        wifiSpot.save(function (err) {
+            if (err)
+                res.send(err);
+            res.json({
+                message: 'wifiSpot unlike plus one'
+            });
+        });
+    });
+})
+
+
 
 
 
