@@ -92,6 +92,22 @@ router.route('/unlike/:wifiId')
     });
 })
 
+router.route('/findInRange')
+
+.get(function (req, res) {
+
+    wifiSpot
+    .find(function (err, wifies) {
+        if (err)
+            res.send(err);
+        res.json(wifies);
+    })
+    .where('latitude').gt(req.body.lat - 50).lt(req.body.lat + 50)
+    .where('longitude').gt(req.body.lon - 50).lt(req.body.lon + 50)
+    .exec(callback);
+});
+
+
 
 
 
